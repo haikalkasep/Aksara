@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import LoginPages from "./pages/LoginPages.jsx"
 import Materi from "./pages/Materi"
 import DetailMateri from "./pages/DetailMateri.jsx";
+import Aksara from "./pages/Aksara"
+import Quiz from "./pages/Quiz"
 function App() {
   return (
     <>
@@ -14,6 +16,8 @@ function App() {
             <Route exact path="/login" element={<LoginPages />}></Route>
             <Route exact path="/materi" element={<Materi/>}></Route>
             <Route exact path="/materi/detail/:materiId" element={<DetailMateri/>}></Route>
+            <Route exact path="/artikel" element={<Aksara/>}></Route>
+            <Route exact path="/quiz" element={<Quiz/>}></Route>
           </Routes>
         </Router>
       </div>

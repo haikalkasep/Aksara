@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { supabase } from "../config/supabase.js";
 
 export default function DetailMateri() {
@@ -48,17 +48,32 @@ export default function DetailMateri() {
 
   return (
     <>
-      <main>
-        <section>
-          {data && (
-            <div>
-              <h1>{data.Judul}</h1>
-              <p>{data.Deskripsi}</p>
-              <img src={data.gambar} alt={data.Judul} />
+    <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-3xl mx-auto">
+      <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+        {data && (
+          <>
+            <img
+              src={data.gambar}
+              alt={data.Judul}
+              className="w-full h-auto max-w-full max-h-96"
+            />
+            <div className="p-6">
+              <h1 className="text-3xl font-semibold mb-4">{data?.Judul}</h1>
+              <p className="text-gray-600 mb-6">{data.Deskripsi}</p>
+              {/* Tambahkan komponen lain di sini */}
+              <Link
+                to="/materi"
+                className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg"
+              >
+                Kembali
+              </Link>
             </div>
-          )}
-        </section>
-      </main>
+          </>
+        )}
+      </div>
+    </div>
+  </div>
     </>
   );
 }

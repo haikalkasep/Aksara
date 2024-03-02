@@ -56,18 +56,23 @@ export default function FAB() {
       console.error("Pengguna belum login.");
       return;
     }
-
-    const imageName = `${uuidv4()}.${gambar.name.split(".").pop()}`;
-
-    // Simpan gambar ke penyimpanan
-    const { data: fileData, error: fileError } = await supabase.storage
-      .from("gambar")
-      .upload(`images/${imageName}`, gambar);
-    if (fileError) {
-      console.error("Error uploading file:", fileError.message);
-      return;
+  
+    let imageName = null;
+  
+    // Jika gambar telah dipilih, simpan ke penyimpanan
+    if (gambar) {
+      imageName = `${uuidv4()}.${gambar.name.split(".").pop()}`;
+  
+      // Simpan gambar ke penyimpanan
+      const { data: fileData, error: fileError } = await supabase.storage
+        .from("gambar")
+        .upload(`images/${imageName}`, gambar);
+      if (fileError) {
+        console.error("Error uploading file:", fileError.message);
+        return;
+      }
     }
-
+  
     // Lakukan pengolahan data, misalnya simpan ke database
     const newData = {
       id_user: user.id,
@@ -75,7 +80,7 @@ export default function FAB() {
       Deskripsi: deskripsi,
       gambar: imageName, // Simpan referensi ke gambar dari penyimpanan
     };
-
+  
     // Simpan data ke database menggunakan Supabase
     const { data, error } = await supabase.from("postingan").insert([newData]);
     if (error) {
@@ -85,7 +90,6 @@ export default function FAB() {
       onClose();
     }
   };
-
   return (
     <>
       {user ? (
@@ -151,7 +155,7 @@ export default function FAB() {
                         py={2}
                         px={4}
                       >
-                        Unggah Gambar
+                        Unggah Gambar(Opsional)
                       </Button>
                     </label>
                   </Stack>

@@ -35,34 +35,32 @@ export default function Navbars() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">Aksara</p>
+          <p className="font-bold text-inherit">
+            <a href="/">Aksara</a>
+          </p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
-          ᮙᮃᮒᮨᮛᮤ
+          <Link color="foreground" href="/materi">
+            ᮙᮃᮒᮨᮛᮤ
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
+          <Link href="/" aria-current="page"></Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
+          <Link color="foreground" href="#"></Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link href="/login">ᮙᮃᮞᮥᮊ᮪</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <Button as={Link} color="primary" href="/register" variant="flat">
+            ᮃᮊᮥᮔ᮪
           </Button>
         </NavbarItem>
       </NavbarContent>

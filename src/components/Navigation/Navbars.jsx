@@ -10,30 +10,47 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
+import { IoCloseSharp } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
+
+import {
+  useDisclosure,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+} from "@chakra-ui/react";
 
 export default function Navbars() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const disclosure = useDisclosure();
 
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="shadow-sm bg-slate-100">
       <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
+        <RxHamburgerMenu size="2em" className="cursor-pointer" onClick={onOpen}/>
+
+        {/* Drawer => Gambar */}
+        <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerHeader className="flex justify-between" borderBottomWidth="1px">
+              Basic Drawer
+              <IoCloseSharp className="cursor-pointer" size="2em" onClick={onClose}/>
+            </DrawerHeader>
+            <DrawerBody>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+              <p>Some contents...</p>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
+
         <NavbarBrand>
           <p className="font-bold text-inherit">
             <a href="/">Aksara</a>
@@ -64,26 +81,7 @@ export default function Navbars() {
           </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
+      <NavbarMenu></NavbarMenu>
     </Navbar>
   );
 }

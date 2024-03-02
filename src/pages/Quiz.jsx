@@ -176,9 +176,13 @@ const Quiz = () => {
                   <Text fontSize="md" fontWeight="bold" mb="2">
                     Aksara Sunda:{" "}
                   </Text>
-                  <Text ml="2">
-                    {questions[currentQuestionIndex].aksara_sunda}
-                  </Text>
+              
+                  <h1
+                  className="font-bold text-2xl"
+                  style={{ fontSize: "5rem", display: "inline-block" }}
+                >
+                  {questions[currentQuestionIndex].aksara_sunda}
+                </h1>
                 </Box>
               </motion.div>
               <Text fontSize="xl" textAlign="center" mb={4}>

@@ -50,7 +50,7 @@ export default function Materi() {
   return (
     <>
       <main>
-        <div>
+        <div className="flex flex-wrap justify-center">
           {getData.map((post) => (
             <div
               key={post.id}
@@ -67,7 +67,7 @@ export default function Materi() {
                 </div>
                 <div>
                   <Button className="text-sm text-slate font-sans">
-                    <a href={`detail/${post.id}`}>Detail nya</a>
+                    <a href={`materi/detail/${post.id}`}>Detail nya</a>
                   </Button>
                 </div>
               </div>

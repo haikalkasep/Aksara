@@ -1,5 +1,4 @@
 import React from "react";
-import Pagination from "../Pagination.jsx";
 import {
   Navbar,
   NavbarBrand,
@@ -15,11 +14,11 @@ import {
   CardBody,
   Image,
 } from "@nextui-org/react";
-import Back from "../Back.jsx";
-import E from "../../../../public/images/AksaraE.png";
-import Eneg from "../../../../public/images/Eneg.png";
-import Emas from "../../../../public/images/emas.png";
-import Vokalisasi from "../../../../public/images/vokalE.png";
+import Back from "../../../components/Artikel/Back.jsx";
+import P from "../../../../public/images/P.png";
+import éndah from "../../../../public/images/endah.png";
+import éma from "../../../../public/images/ema.png";
+import Vokalisasi from "../../../../public/images/vokall.png";
 
 export default function ArtikelA() {
   return (
@@ -29,10 +28,10 @@ export default function ArtikelA() {
       </div>
       <div className="flex justify-center">
         <Card className="">
-          <Image src={E} className="w-44" />
+          <Image src={P} className="w-44" />
           <h1 className="text-center mb-3 text-1xl">
             Cara Pengucapan :<br />
-            <h1 className="font-bold text-2xl">e</h1>
+            <h1 className="font-bold text-2xl">é</h1>
           </h1>
         </Card>
       </div>
@@ -42,28 +41,26 @@ export default function ArtikelA() {
           <Image src={Vokalisasi} className="w-80" />
         </Card>
       </div>
-      <div className="flex justify-center mt-5 mb-16">
+      <div className="flex justify-center mt-5 mb-24">
         <Card>
           <h1 className="mx-5 mt-3">Contoh Penggunaan :</h1>
           <div className="mt-5">
-          <Image src={Eneg} className="w-80" />
+          <Image src={éndah} className="w-80" />
           <h1 className="text-center mt- mb-5 text-2xl font-bold">
             <div className="flex justify-center">
-              <h1 className="ml-">e</h1> <h1 className="mx-9">ne</h1>{" "}
-              <h1 className="">g</h1>
+              <h1 className="mr-8">e</h1> <h1 className="mr-10 nl-5">n</h1>{" "}
+              <h1 className="mr-3 nl-1">dah</h1>
             </div>
           </h1>
-          <Image src={Emas} className="w-80" />
+          <Image src={éma} className="w-80" />
           <h1 className="text-center mt- mb-5 text-2xl font-bold">
             <div className="flex justify-center">
-              <h1 className="mr-6">e</h1> <h1 className="mr-0">ma</h1>{" "}
-              <h1 className="mr-3 ml-8">s</h1> 
+              <h1 className="mr-12 ml-6">é</h1> <h1 className="ml- mr-3">ma</h1>{" "}
             </div>
           </h1>
           </div>
         </Card>
       </div>
-      <Pagination/>
     </>
   );
 }

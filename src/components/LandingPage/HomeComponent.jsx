@@ -1,7 +1,12 @@
 import React from "react";
+
 import foto from "../../../public/images/aksara-sunda.png";
 import bg from "../../../public/images/bg.png";
 import Artikel from "../../pages/Artikels/Artikel.jsx";
+
+import foto from "../../../public/images/aksara-sunda.png"
+import bg from "../../../public/images/bg.png"
+
 import {
   Navbar,
   NavbarBrand,
@@ -30,11 +35,17 @@ export default function HomeComponent() {
               <br /> - Wendell Pierce
             </h1>
             <div className="flex justify-center lg:justify-start">
+
               <Link href="/artikel">
                 <Button className="bg-white font-bold text-sky-500 mt-5">
                   Mulai belajar
                 </Button>
               </Link>
+
+              <Button className="bg-white font-bold text-sky-500 mt-5">
+                Mulai belajar
+              </Button>
+
             </div>
           </div>
 
@@ -49,4 +60,8 @@ export default function HomeComponent() {
       />
     </>
   );
+
 }
+
+}
+

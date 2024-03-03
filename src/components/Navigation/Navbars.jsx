@@ -33,15 +33,26 @@ export default function Navbars() {
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="shadow-sm bg-slate-100">
       <NavbarContent>
-        <RxHamburgerMenu size="2em" className="cursor-pointer" onClick={onOpen}/>
+        <RxHamburgerMenu
+          size="2em"
+          className="cursor-pointer"
+          onClick={onOpen}
+        />
 
         {/* Drawer => Gambar */}
         <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent>
-            <DrawerHeader className="flex justify-between" borderBottomWidth="1px">
+            <DrawerHeader
+              className="flex justify-between"
+              borderBottomWidth="1px"
+            >
               Basic Drawer
-              <IoCloseSharp className="cursor-pointer" size="2em" onClick={onClose}/>
+              <IoCloseSharp
+                className="cursor-pointer"
+                size="2em"
+                onClick={onClose}
+              />
             </DrawerHeader>
             <DrawerBody>
               <p>Some contents...</p>
@@ -61,7 +72,17 @@ export default function Navbars() {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="/materi">
-            ᮙᮃᮒᮨᮛᮤ
+            ᮙᮒᮨᮛᮤ
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/quiz  ">
+            ᮋᮥᮄᮐ᮪
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/artikel  ">
+            ᮃᮛ᮪ᮒᮤᮊᮨᮜ᮪
           </Link>
         </NavbarItem>
         <NavbarItem isActive>

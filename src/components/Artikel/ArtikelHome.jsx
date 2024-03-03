@@ -20,8 +20,13 @@ export default function ArtikelHome() {
     <div>
       <h1 className="font-bold text-5xl text-center mt-5">Artaksa</h1>
       <h1 className="text-2xl text-center mt-3 mb-5">Artikel Aksara</h1>
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-2">
+        <Link href="/artikel/a">
+
       <div className="grid sm:grid-cols-3 lg:grid-cols-4 gap-2">
         <Link>
+
           <Card className="mx-3">
             <CardHeader>
               <h1>Artaksa huruf ᮃ</h1>
@@ -35,10 +40,10 @@ export default function ArtikelHome() {
             </CardBody>
           </Card>
         </Link>
-        <Link>
+        <Link href="/artikel/i">
           <Card className="mx-3">
             <CardHeader>
-              <h1>Artaksa huruf ᮃ</h1>
+              <h1>Artaksa huruf ᮄ</h1>
             </CardHeader>
             <CardBody>
               <Image
@@ -49,10 +54,10 @@ export default function ArtikelHome() {
             </CardBody>
           </Card>
         </Link>
-        <Link>
+        <Link href="/artikel/u">
           <Card className=" mx-3">
             <CardHeader>
-              <h1>Artaksa huruf ᮃ</h1>
+              <h1>Artaksa huruf ᮅ</h1>
             </CardHeader>
             <CardBody>
               <Image
@@ -63,6 +68,10 @@ export default function ArtikelHome() {
             </CardBody>
           </Card>
         </Link>
+        <Link href="/artikel/eu">
+          <Card className="mx-3">
+            <CardHeader>
+              <h1>Artaksa huruf ᮉ</h1>
         <Link href="/artikel/o">
           <Card className="mx-3">
             <CardHeader>

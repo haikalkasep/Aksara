@@ -53,18 +53,25 @@ const Quiz = () => {
 
   const getOptions = (question) => {
     const allLatinChars = questions.map((q) => q.aksara_latin);
-    const randomIndexes = [];
     const options = [];
-    while (options.length < 3) {
-      const randomIndex = Math.floor(Math.random() * allLatinChars.length);
-      if (!randomIndexes.includes(randomIndex)) {
-        options.push(allLatinChars[randomIndex]);
-        randomIndexes.push(randomIndex);
-      }
+    const correctAnswer = question.aksara_latin;
+
+    
+    options.push(correctAnswer);
+
+    
+    while (options.length < 4) {
+        const randomIndex = Math.floor(Math.random() * allLatinChars.length);
+        const randomOption = allLatinChars[randomIndex];
+        if (randomOption !== correctAnswer && !options.includes(randomOption)) {
+            options.push(randomOption);
+        }
     }
-    options.push(question.aksara_latin);
-    return options;
-  };
+
+    
+    const shuffledOptions = shuffle(options);
+    return shuffledOptions;
+};
 
   const handleAnswerSelection = (answer) => {
     setShowOptions(false);

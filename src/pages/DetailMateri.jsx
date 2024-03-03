@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { supabase } from "../config/supabase.js";
+import {Image} from "@nextui-org/react"
 
 export default function DetailMateri() {
   const [data, setData] = useState(null);
@@ -50,13 +51,13 @@ export default function DetailMateri() {
     <>
     <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
     <div className="max-w-3xl mx-auto">
-      <div className="bg-white rounded-lg overflow-hidden shadow-sm">
+      <div className="bg-white rounded-lg overflow-hidden shadow-sm" style={{width: ""}}>
         {data && (
           <>
-            <img
+            <Image
               src={data.gambar}
               alt={data.Judul}
-              className="w-full h-auto max-w-full max-h-96"
+              className="w-full h-auto max-w-full max-h-96 object-contain"
             />
             <div className="p-6">
               <h1 className="text-3xl font-semibold mb-4">{data?.Judul}</h1>

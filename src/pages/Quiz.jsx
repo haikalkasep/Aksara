@@ -253,7 +253,10 @@ const Quiz = () => {
           <Box>
             <Text fontSize="2xl" textAlign="center" mb={4}>
               Waktu Habis!
+              <h1>Skor Anjeun:{score}</h1>
+              <h2>Salah Anjeun:{mistake}s</h2>
             </Text>
+        
             <Button
               onClick={handleRestartGame}
               colorScheme="blue"

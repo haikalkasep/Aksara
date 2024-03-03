@@ -47,7 +47,9 @@ export default function Navbars() {
               className="flex justify-between"
               borderBottomWidth="1px"
             >
-              Basic Drawer
+              <Link className="font-bold text-inherit">
+                <a href="/">Aksara</a>
+              </Link>
               <IoCloseSharp
                 className="cursor-pointer"
                 size="2em"
@@ -55,9 +57,29 @@ export default function Navbars() {
               />
             </DrawerHeader>
             <DrawerBody>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
+              <NavbarItem>
+                <Link color="foreground" href="/materi">
+                  ᮙᮒᮨᮛᮤ
+                </Link>
+              </NavbarItem>
+              <NavbarItem>
+                <Link color="foreground" href="/quiz  ">
+                  ᮋᮥᮄᮐ᮪
+                </Link>
+              </NavbarItem>
+              <NavbarItem>
+                <Link color="foreground" href="/artikel  ">
+                  ᮃᮛ᮪ᮒᮤᮊᮨᮜ᮪
+                </Link>
+              </NavbarItem>
+              <NavbarItem className="hidden lg:flex">
+                <Link href="/login">ᮙᮃᮞᮥᮊ᮪</Link>
+              </NavbarItem>
+              <NavbarItem>
+                <Link as={Link} color="primary" href="/register" variant="flat">
+                  ᮃᮊᮥᮔ᮪
+                </Link>
+              </NavbarItem>
             </DrawerBody>
           </DrawerContent>
         </Drawer>

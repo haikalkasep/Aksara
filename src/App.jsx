@@ -11,6 +11,9 @@ import DetailMateri from "./pages/DetailMateri.jsx";
 import Aksara from "./pages/Aksara"
 import Quiz from "./pages/Quiz"
 
+import ArtikelI from "./pages/Artikels/ArtikelVokal/ArtikelI.jsx"
+import ArtikelU from "./pages/Artikels/ArtikelVokal/ArtikelU.jsx"
+import ArtikelEU from "./pages/Artikels/ArtikelVokal/ArtikelEU.jsx"
 function App() {
   return (
     <>
@@ -28,6 +31,10 @@ function App() {
             <Route exact path="/artikel" element={<Aksara/>}></Route>
             <Route exact path="/quiz" element={<Quiz/>}></Route>
 
+            <Route exact path="/artikel/a" element={<ArtikelA  />}></Route>
+            <Route exact path="/artikel/i" element={<ArtikelI  />}></Route>
+            <Route exact path="/artikel/u" element={<ArtikelU  />}></Route>
+            <Route exact path="/artikel/eu" element={<ArtikelEU  />}></Route>
           </Routes>
         </Router>
       </div>

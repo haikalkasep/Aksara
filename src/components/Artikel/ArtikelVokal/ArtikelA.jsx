@@ -1,4 +1,5 @@
 import React from "react";
+import Pagination from "../Pagination.jsx";
 import {
   Navbar,
   NavbarBrand,
@@ -41,7 +42,7 @@ export default function ArtikelA() {
           <Image src={Vokalisasi} className="w-80" />
         </Card>
       </div>
-      <div className="flex justify-center mt-5 mb-24">
+      <div className="flex justify-center mt-5 mb-16">
         <Card>
           <h1 className="mx-5 mt-3">Contoh Penggunaan :</h1>
           <div className="mt-5">
@@ -62,6 +63,7 @@ export default function ArtikelA() {
           </div>
         </Card>
       </div>
+      <Pagination/>
     </>
   );
 }

@@ -28,7 +28,7 @@ export default function ArtikelA() {
       </div>
       <div className="flex justify-center">
         <Card className="">
-          <Image src={O} className="w-44" />
+          <Image src="images/AksaraO.png" className="w-44" />
           <h1 className="text-center mb-3 text-1xl">
             Cara Pengucapan :<br />
             <h1 className="font-bold text-2xl">o</h1>
@@ -38,21 +38,21 @@ export default function ArtikelA() {
       <div className="flex justify-center mt-5">
         <Card>
           <h1 className="mx-5 mt-3">Bentuk Vokalisasi :</h1>
-          <Image src={Vokalisasi} className="w-80" />
+          <Image src="images/Vokal0.png" className="w-80" />
         </Card>
       </div>
       <div className="flex justify-center mt-5 mb-24">
         <Card>
           <h1 className="mx-5 mt-3">Contoh Penggunaan :</h1>
           <div className="mt-5">
-          <Image src={Omat} className="w-80" />
+          <Image src="images/Omat.png" className="w-80" />
           <h1 className="text-center mt- mb-5 text-2xl font-bold">
             <div className="flex justify-center">
               <h1 className="mr-8">o</h1> <h1 className="mr-10 nl-5">ma</h1>{" "}
               <h1 className="mr-3 nl-1">t</h1>
             </div>
           </h1>
-          <Image src={Orok} className="w-80" />
+          <Image src="images/Orok.png" className="w-80" />
           <h1 className="text-center mt- mb-5 text-2xl font-bold">
             <div className="flex justify-center">
               <h1 className="mr-10">o</h1> <h1 className="mr-5">ro</h1>{" "}

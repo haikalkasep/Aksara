@@ -14,6 +14,10 @@ import Quiz from "./pages/Quiz"
 import ArtikelI from "./pages/Artikels/ArtikelVokal/ArtikelI.jsx"
 import ArtikelU from "./pages/Artikels/ArtikelVokal/ArtikelU.jsx"
 import ArtikelEU from "./pages/Artikels/ArtikelVokal/ArtikelEU.jsx"
+import ArtikelE from "./pages/Artikels/ArtikelVokal/ArtikelE.jsx"
+import ArtikelP from "./pages/Artikels/ArtikelVokal/ArtikelP.jsx"
+
+
 function App() {
   return (
     <>
@@ -35,6 +39,8 @@ function App() {
             <Route exact path="/artikel/i" element={<ArtikelI  />}></Route>
             <Route exact path="/artikel/u" element={<ArtikelU  />}></Route>
             <Route exact path="/artikel/eu" element={<ArtikelEU  />}></Route>
+            <Route exact path="/artikel/e" element={<ArtikelE  />}></Route>
+            <Route exact path="/artikel/p" element={<ArtikelP  />}></Route>
           </Routes>
         </Router>
       </div>

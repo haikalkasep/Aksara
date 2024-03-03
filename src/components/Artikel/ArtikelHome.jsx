@@ -35,10 +35,10 @@ export default function ArtikelHome() {
             </CardBody>
           </Card>
         </Link>
-        <Link>
+        <Link href="/artikel/i">
           <Card className="mx-3">
             <CardHeader>
-              <h1>Artaksa huruf ᮃ</h1>
+              <h1>Artaksa huruf ᮄ</h1>
             </CardHeader>
             <CardBody>
               <Image
@@ -49,10 +49,10 @@ export default function ArtikelHome() {
             </CardBody>
           </Card>
         </Link>
-        <Link>
+        <Link href="/artikel/u">
           <Card className=" mx-3">
             <CardHeader>
-              <h1>Artaksa huruf ᮃ</h1>
+              <h1>Artaksa huruf ᮅ</h1>
             </CardHeader>
             <CardBody>
               <Image
@@ -63,10 +63,10 @@ export default function ArtikelHome() {
             </CardBody>
           </Card>
         </Link>
-        <Link>
+        <Link href="/artikel/eu">
           <Card className="mx-3">
             <CardHeader>
-              <h1>Artaksa huruf ᮃ</h1>
+              <h1>Artaksa huruf ᮉ</h1>
             </CardHeader>
             <CardBody>
               <Image

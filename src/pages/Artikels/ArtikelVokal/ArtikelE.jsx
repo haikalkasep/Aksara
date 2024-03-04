@@ -14,7 +14,7 @@ import {
   CardBody,
   Image,
 } from "@nextui-org/react";
-import Back from "../Back.jsx";
+import Back from "../../../components/Artikel/Back.jsx"
 import Eneg from "../../../../public/images/Eneg.png";
 import Emas from "../../../../public/images/emas.png";
 import Vokalisasi from "../../../../public/images/vokalE.png";

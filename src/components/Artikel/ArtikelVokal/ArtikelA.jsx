@@ -15,10 +15,10 @@ import {
   Image,
 } from "@nextui-org/react";
 import Back from "../Back.jsx";
-import A from "images/AAksara.png";
-import Abdi from "images/Abdi.jpg";
-import Abdas from "images/AbdasAksara.png";
-import Vokalisasi from "images/avokal.png";
+import A from "../../../../public/images/AAksara.png";
+import Abdi from "../../../../public/images/Abdi.jpg";
+import Abdas from "../../../../public/images/AbdasAksara.png";
+import Vokalisasi from "../../../../public/images/avokal.png";
 
 export default function ArtikelA() {
   return (

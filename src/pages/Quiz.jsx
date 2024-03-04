@@ -254,7 +254,7 @@ const Quiz = () => {
             <Text fontSize="2xl" textAlign="center" mb={4}>
               Waktu Habis!
               <h1>Skor Anjeun:{score}</h1>
-              <h2>Salah Anjeun:{mistake}s</h2>
+              <h2>Salah Anjeun:{mistakes}</h2>
             </Text>
         
             <Button

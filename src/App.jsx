@@ -53,7 +53,7 @@ function App() {
             <Route exact path="/artikel/eu" element={<ArtikelEU />}></Route>
             <Route exact path="/artikel/o" element={<ArtikelO />}></Route>
             <Route exact path="/artikel/e" element={<ArtikelE />}></Route>
-            <Route exact path="/artikel/p" element={<ArtikelP/>}</Route>
+            <Route exact path="/artikel/p" element={<ArtikelP/>}></Route>
           </Routes>
         </Router>
       </div>

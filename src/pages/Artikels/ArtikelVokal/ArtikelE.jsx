@@ -15,7 +15,6 @@ import {
   Image,
 } from "@nextui-org/react";
 import Back from "../Back.jsx";
-import E from "images/AksaraE.png";
 import Eneg from "images/Eneg.png";
 import Emas from "images/emas.png";
 import Vokalisasi from "images/vokalE.png";
@@ -28,7 +27,7 @@ export default function ArtikelA() {
       </div>
       <div className="flex justify-center">
         <Card className="">
-          <Image src={E} className="w-44" />
+       
           <h1 className="text-center mb-3 text-1xl">
             Cara Pengucapan :<br />
             <h1 className="font-bold text-2xl">e</h1>

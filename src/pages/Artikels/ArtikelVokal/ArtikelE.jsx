@@ -15,9 +15,9 @@ import {
   Image,
 } from "@nextui-org/react";
 import Back from "../Back.jsx";
-import Eneg from "images/Eneg.png";
-import Emas from "images/emas.png";
-import Vokalisasi from "images/vokalE.png";
+import Eneg from "../../../../public/images/Eneg.png";
+import Emas from "../../../../public/images/emas.png";
+import Vokalisasi from "../../../../public/images/vokalE.png";
 
 export default function ArtikelA() {
   return (

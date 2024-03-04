@@ -16,6 +16,7 @@ import ArtikelU from "./pages/Artikels/ArtikelVokal/ArtikelU.jsx";
 import ArtikelEU from "./pages/Artikels/ArtikelVokal/ArtikelEU.jsx";
 import ArtikelO from "./pages/Artikels/ArtikelVokal/ArtikelO.jsx";
 import ArtikelE from "./pages/Artikels/ArtikelVokal/ArtikelE.jsx";
+import ArtikelP from "./pages/Artikels/ArtikelVokal/ArtikelP.jsx";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
             <Route exact path="/artikel/eu" element={<ArtikelEU />}></Route>
             <Route exact path="/artikel/o" element={<ArtikelO />}></Route>
             <Route exact path="/artikel/e" element={<ArtikelE />}></Route>
+            <Route exact path="/artikel/p" element={<ArtikelP/>}</Route>
           </Routes>
         </Router>
       </div>
